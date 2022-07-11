@@ -1,0 +1,115 @@
+input:focus {
+  outline: 1px solid rgb(126, 137, 126);
+  box-shadow: 8px 1px 8px 1px rgb(33, 47, 34);
+}
+
+textarea:focus {
+  outline: 4px solid rgb(128, 66, 66);
+  box-shadow: 1px 1px 8px 1px rgb(238, 246, 238);
+}
+
+body {
+  width: 50%;
+  height: 50%;
+  max-width: 500px;
+  margin: auto;
+  background-color: #9e9494;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#title,
+#description {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#description {
+  max-width: 500px;
+}
+
+#survey-form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+#charCount {
+  font-size: small;
+  padding-top: 5px;
+  float: right;
+}
+
+#warning {
+  font-size: small;
+  padding-top: 5px;
+  color: red;
+}
+
+#comment {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(52, 39, 23);
+}
+.comment_meta {
+  border: 10px;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  color: rgb(255, 254, 254);
+}
+
+fieldset:not(:last-of-type) {
+  border-bottom: 3px solid #f7f7ff;
+}
+
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #c9c4c4;
+  border: 1px solid #010102;
+  color: #000000;
+}
+
+input[type="submit"] {
+  display: inline-flexbox;
+  padding: 17px 27px;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #1e1ef5;
+  border-color: rgb(55, 15, 15);
+  min-width: 300px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  width: 30px;
+}

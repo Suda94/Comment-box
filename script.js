@@ -8,7 +8,9 @@ function myFunction() {
   let comment = document.getElementById("comment").value;
   let email = document.getElementById("email").value;
 
-  let regexEmail = /^\w+([\.-]?\ w+)*@\w+([\.-]?\ w+)*(\.\w{2,3})+$/; // Checks Email
+  let regexEmail = /^\w+([\.-]?\ w+)*@\w+([\.-]?\ w+)*(\.\w{2,3})+$/;
+
+  // Checks Email
   if (name && comment && email.match(regexEmail)) {
     document.getElementById("comment1").innerHTML = comment;
     document.getElementById("meta_author").innerHTML = name;

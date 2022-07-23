@@ -12,13 +12,12 @@ body {
   width: 50%;
   height: 50%;
   max-width: 500px;
-  padding-left: 10%;
-  padding-right: 20%;
+  padding-left: 35%;
   background-color: #9e9494;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
 }
 
@@ -64,7 +63,7 @@ body {
 }
 
 .display_comment {
-  overflow: scroll;
+  overflow: auto;
   width: 500pxpx;
   height: 300px;
 }

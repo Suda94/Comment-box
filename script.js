@@ -23,22 +23,6 @@ const countCharacters = () => {
   let numOfEnteredChars = textArea.value.length;
   let counter = x - numOfEnteredChars;
   characterCounter.textContent = counter + "/140";
-
-  if (counter < 0) {
-    characterCounter.style.color = "red";
-    warning.innerHTML = "charcters .";
-    textArea.style.boxShadow = "none";
-    textArea.style.outline = "1px solid red";
-  } else if (counter < 15) {
-    characterCounter.style.color = "orange";
-    warning.innerHTML = "";
-    textArea.style.boxShadow = "none";
-    textArea.style.outline = "1px solid orange";
-  } else {
-    characterCounter.style.color = "white";
-    warning.innerHTML = "";
-    textArea.style.outline = "none";
-  }
 };
 
 textArea.addEventListener("input", countCharacters);
@@ -48,9 +32,9 @@ submit.addEventListener("click", myFunction);
 
 // submit returns:
 
-var input = document.getElementById("submit");
-var name2 = document.getElementById("name");
-var email = document.getElementById("email");
+const input = document.getElementById("submit");
+const name2 = document.getElementById("name");
+const email = document.getElementById("email");
 
 //promote the user to complete the form before when clicking submit.
 function alertBox() {
